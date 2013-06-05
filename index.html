@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Libogg by Distrotech</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Libogg</h1>
+          <h2>Mirror of git://git.xiph.org/mirrors/ogg.git</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/Distrotech/libogg/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/Distrotech/libogg/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/Distrotech/libogg" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <hr><ul>
+<li>                                                                 *</li>
+<li>THIS FILE IS PART OF THE OggVorbis SOFTWARE CODEC SOURCE CODE.   *</li>
+<li>USE, DISTRIBUTION AND REPRODUCTION OF THIS LIBRARY SOURCE IS     *</li>
+<li>GOVERNED BY A BSD-STYLE SOURCE LICENSE INCLUDED WITH THIS SOURCE *</li>
+<li>IN 'COPYING'. PLEASE READ THESE TERMS BEFORE DISTRIBUTING.       *</li>
+<li>                                                                 *</li>
+<li>THE OggVorbis SOURCE CODE IS (C) COPYRIGHT 1994-2011             *</li>
+<li>by the Xiph.Org Foundation <a href="http://www.xiph.org/">http://www.xiph.org/</a>                  *</li>
+<li>                                                                 *
+********************************************************************</li>
+</ul><p>= WHAT'S HERE =</p>
+
+<p>This source distribution includes libogg and nothing else. Other modules
+(eg, the modules libvorbis, vorbis-tools for the Vorbis music codec,
+libtheora for the Theora video codec) contain the codec libraries for
+use with Ogg bitstreams.</p>
+
+<p>Directory:</p>
+
+<p>./src       The source for libogg, a BSD-license inplementation of
+        the public domain Ogg bitstream format</p>
+
+<p>./include       Library API headers</p>
+
+<p>./doc           Ogg specification and libogg API documents</p>
+
+<p>./win32     Win32 projects and build automation</p>
+
+<p>./macosx    Mac OS X project and build files</p>
+
+<p>= WHAT IS OGG? =</p>
+
+<p>Ogg project codecs use the Ogg bitstream format to arrange the raw,
+compressed bitstream into a more robust, useful form.  For example,
+the Ogg bitstream makes seeking, time stamping and error recovery
+possible, as well as mixing several sepearate, concurrent media
+streams into a single physical bitstream.</p>
+
+<p>= CONTACT =</p>
+
+<p>The Ogg homepage is located at '<a href="https://www.xiph.org/ogg/">https://www.xiph.org/ogg/</a>'.
+Up to date technical documents, contact information, source code and
+pre-built utilities may be found there.</p>
+
+<p>BUILDING FROM TARBALL DISTRIBUTIONS:</p>
+
+<p>./configure
+make</p>
+
+<p>and optionally (as root):
+make install</p>
+
+<p>This will install the Ogg libraries (static and shared) into
+/usr/local/lib, includes into /usr/local/include and API
+documentation into /usr/local/share/doc.</p>
+
+<p>BUILDING FROM REPOSITORY SOURCE:</p>
+
+<p>A standard svn build should consist of nothing more than:</p>
+
+<p>./autogen.sh
+make</p>
+
+<p>and as root if desired :</p>
+
+<p>make install</p>
+
+<p>BUILDING ON WIN32:</p>
+
+<p>Use the project file in the win32 directory. It should compile out of the box.</p>
+
+<p>CROSS COMPILING FROM LINUX TO WIN32:</p>
+
+<p>It is also possible to cross compile from Linux to windows using the MinGW
+cross tools and even to run the test suite under Wine, the Linux/*nix
+windows emulator.</p>
+
+<p>On Debian and Ubuntu systems, these cross compiler tools can be installed
+by doing:</p>
+
+<pre><code>sudo apt-get mingw32 mingw32-binutils mingw32-runtime wine
+</code></pre>
+
+<p>Once these tools are installed its possible to compile and test by
+executing the following commands, or something similar depending on
+your system:</p>
+
+<pre><code>./configure --host=i586-mingw32msvc --target=i586-mingw32msvc \
+     --build=i586-linux
+make
+make check
+</code></pre>
+
+<p>(Build instructions for Ogg codecs such as vorbis are similar and may
+be found in those source modules' README files)</p>
+
+<p>$Id$</p>
+        </section>
+
+        <footer>
+          Libogg is maintained by <a href="https://github.com/Distrotech">Distrotech</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
